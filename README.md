@@ -73,6 +73,8 @@ PyMesh also has a number of optional dependencies:
 * [Geogram](http://alice.loria.fr/software/geogram/doc/html/index.html): A
   programming library of geometric algorithms
 * [libigl](http://igl.ethz.ch/projects/libigl/): A simple C++ geometry
+
+
   processing library.
 * [MMG](https://www.mmgtools.org/): Robust, open source & multidisciplinary
   software for remeshing.
@@ -129,7 +131,7 @@ The first step is to compile the optional third party dependencies:
     make
     make install
 
-*NB* If you had problem to find the GMP you should probably execute the following command:
+*NB- Optional* If you had problem to find the GMP you should probably execute the following command:
 
     sudo apt-get install libmpfr-dev, libgmp-dev, libboost-all-dev
 
@@ -142,6 +144,12 @@ Now we can build the main project.  It is recommended to build out of source:
     mkdir build
     cd build
     cmake ..
+
+*NB- Optional* make sure that you have a recent cmake version
+* remove the current CMAKE 
+    sudo apt remove cmake
+* Install Cmake
+    * [askubuntu](https://askubuntu.com/a/976700): Install CMALE
 
 To build the PyMesh library:
 
