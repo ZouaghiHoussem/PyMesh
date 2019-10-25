@@ -129,6 +129,10 @@ The first step is to compile the optional third party dependencies:
     make
     make install
 
+*NB* If you had problem to find the GMP you should probably execute the following command:
+
+    sudo apt-get install libmpfr-dev, libgmp-dev, libboost-all-dev
+
 Third party dependencies will be installed in
 `$PYMESH_PATH/python/pymesh/third_party` directory.
 
